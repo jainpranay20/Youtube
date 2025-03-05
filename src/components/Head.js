@@ -14,13 +14,17 @@ const Head = () => {
                     className='h-8 cursor-pointer'
                     alt="menu"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png"
-                    onClick={()=> toggleMenuHandler()}
+                    onClick={() => toggleMenuHandler()}
                 />
-                <img
-                    className='h-8 ml-2'
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png"
-                    alt="youtube-logo"
-                />
+                <a href="/">
+                    <img
+                        className='h-8 ml-2'
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png"
+                        alt="youtube-logo"
+                        onClick={() => window.location.href = "/"}
+                    />
+
+                </a>
             </div>
             <div className="col-span-10 px-14 flex justify-center items-center">
                 <input className="w-1/2 border border-gray p-2 rounded-l-full" type="text" />
